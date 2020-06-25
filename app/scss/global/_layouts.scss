@@ -1,0 +1,79 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+} 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+ul,
+a,
+i,
+nav,
+li {
+    list-style: none;
+}
+
+body {
+    position: relative;
+    
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: white;
+}
+h1 {
+    font-size: 52px;
+}
+h5 {
+    font-size: 24px;
+}
+h6 {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.content_section {
+    max-width: 1140px;
+    margin: 0 auto;
+    @include respond-to(xl) {
+        padding: 0 40px;
+        max-width: 860px;
+    }
+
+    @include respond-to(sm) {
+        padding: 0 15px;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.no_display {
+    display: none;
+    transition: all .3s ease;
+}
+
+.overflow-hidden {
+    
+    @include respond-to(xl) {
+        overflow: hidden;
+    }
+}

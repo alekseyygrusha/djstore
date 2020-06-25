@@ -1,0 +1,18 @@
+.callback_form.no_display
+    .callback_form_content
+        .close_icon_wrap
+            .close_icon
+        .padding_wrap
+            h5.form_title Готовы обсудить проект?
+            p.text Заполните форму ниже и мы свяжемся с вами.
+            input.input.input_name(type='text' placeholder='Имя*')
+            input.input.input_phone(type='text' placeholder='Телефон*')
+            p.text.personal_date_text  
+                input(type="checkbox" id="radio1" name="radios-one" value="all" checked style="display: none") 
+                label.check_box(for='radio1')
+                    i.cheked(class="fa fa-check" aria-hidden="true")
+                span Я согласен с условиями обработки
+                span 
+                    a.personal_date персональных данных
+            .button_wrap
+                a.button.button_send Отправить

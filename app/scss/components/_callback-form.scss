@@ -1,0 +1,140 @@
+.callback_form {
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    
+    .callback_form_content {
+        position: relative;
+        margin: 25% auto;
+        width: 538px;
+        background-color: white;
+        border-radius: 5%;
+        @include respond-to(sm) {
+            width: 355px;
+        }
+        
+        .close_icon_wrap {
+            width: 18px;
+            height: 18px;
+            position: absolute;
+            right: 30px;
+            top: 30px;
+            .close_icon {
+                width: 23px;
+                height: 2px;
+                background-color: #2B2D3A;
+                transform: rotate(45deg);
+                transform-origin: left;
+                opacity: 0.8;
+            }
+
+            .close_icon::after {
+                position: absolute;
+                content: '';
+                width: 23px;
+                height: 2px;
+                background-color: #2B2D3A;
+                transform: rotate(85deg);
+            }
+        }
+
+        .close_icon_wrap:hover {
+            cursor: pointer;
+            .close_icon,
+            .close_icon::after {
+                transition: .3s;
+                background-color: #397DFF;
+            }
+        }
+
+
+        
+        .padding_wrap {
+            padding: 32px 48px 48px 48px;
+            @include respond-to(sm) {
+                padding: 18px 14px 36px 18px;
+            }
+            .form_title {
+                color: #2B2D3A;
+                font-weight: 600;
+            }
+            .form_title {
+                padding-bottom: 12px;
+            }
+
+            .input {
+                width: 100%;
+                height: 48px;
+                padding-left: 15px;
+                
+            }
+
+            .input_name {
+                margin-top: 28px;
+            }
+
+            .input_phone {
+                margin: 24px 0 32px 0;
+            }
+            .text {
+                color: #2B2D3A;
+                font-size: 16px;
+                letter-spacing: 2px;
+                @include respond-to(sm) {
+                    font-size: 13px;
+                    letter-spacing: 1.2px;
+                }
+                .personal_date {
+                    color: #397DFF;
+                }
+            }
+
+            .personal_date_text {
+                font-size: 14px;
+                letter-spacing: 1px;
+                @include respond-to(sm) {
+                    font-size: 10px;
+                }
+                .check_box {
+                    width: 16px;
+                    height: 16px;
+                    border: 1px solid #397DFF;
+                    border-radius: 4px;
+                    margin-right: 15px;
+                    @include respond-to(sm) {
+                        margin-right: 9px;
+                    }
+                    .cheked {
+                        color: #397DFF;
+                    }
+                }
+                
+            }
+            
+
+            .button_wrap {
+                margin-top: 16px;
+                width: 100%;
+                height: 52px;
+                .button_send {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #397DFF;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: white;
+                    border-radius: 10px;
+                }
+
+                .button_send:hover {
+                    box-shadow: 0 0 8px 1px #397DFF;
+                    transition: .3s;
+                }
+            }
+        }
+    }
+}
