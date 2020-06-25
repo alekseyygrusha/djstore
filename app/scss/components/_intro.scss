@@ -74,6 +74,19 @@
                     }
                 }
 
+                .back_call {
+
+                }
+
+                .back_call:hover {
+                    background-color: white;
+                    transition: .3s;
+                    color: #777777;
+                    
+                }
+
+                
+
                 
                 .button {
                     width: 186px;
@@ -91,10 +104,16 @@
                     }
                 }
     
-                .button:hover {
-                    transition: .3s;
+                
+
+                .button_brif {
                     background-color: #397DFF;
-                    border: 1px solid #397DFF;
+                    border: none;
+                    
+                }
+
+                .button_brif:hover {
+                    box-shadow: 0 0 8px 1px #397DFF;
                 }
             }
         }

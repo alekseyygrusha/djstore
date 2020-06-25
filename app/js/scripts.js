@@ -70,7 +70,10 @@ $(document).ready(function() {
 
     $('.call').on('click', function() {
         $('.callback_form').toggleClass('no_display');
-        
+    });
+
+    $('.back_call').on('click', function() {
+        $('.callback_form').toggleClass('no_display');
     });
 
     $('.close_icon_wrap').on('click', function() {
